@@ -1,0 +1,119 @@
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    padding: 24px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .breadcrumb a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .breadcrumb span {
+    text-overflow: ellipsis; /* Add "..." when text overflows */
+    overflow: hidden;
+    max-width: 100%; /* Adjust as needed */
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .breadcrumb a:hover {
+    color: #fb52c9;
+  }
+
+  .breadcrumb .separator {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    min-width: 16px;
+  }
+
+  @media screen and (max-width: 1600px) {
+    .breadcrumb {
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .breadcrumb {
+      padding: 8px 12px;
+      gap: 2px;
+    }
+  }
+</style>
+
+<nav class="container breadcrumb">
+  <a href="{{ routes.root_url }}">HOME</a>
+  <span class="separator">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+      <path d="M6.47135 11.7998L10.276 7.9951L6.47135 4.19043L5.52869 5.1331L8.39069 7.9951L5.52869 10.8571L6.47135 11.7998Z" fill="black"/>
+    </svg>
+  </span>
+
+  {% if template == 'collection' %}
+    <span>{{ collection.title | upcase }}</span>
+
+  {% elsif template == 'product' %}
+    {% if collection %}
+      <a href="{{ collection.url }}">{{ collection.title | upcase }}</a>
+      <span class="separator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+          <path d="M6.47135 11.7998L10.276 7.9951L6.47135 4.19043L5.52869 5.1331L8.39069 7.9951L5.52869 10.8571L6.47135 11.7998Z" fill="black"/>
+        </svg>
+      </span>
+    {% endif %}
+    <span>{{ product.title | upcase }}</span> 
+
+  {% elsif template == 'page' %}
+    <span>{{ page.title | upcase }}</span>
+
+  {% elsif template == 'blog' %}
+    <span>{{ blog.title | upcase }}</span>
+
+  {% elsif template == 'article' %}
+    <a href="{{ blog.url }}">{{ blog.title | upcase }}</a>
+    <span class="separator">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+        <path d="M6.47135 11.7998L10.276 7.9951L6.47135 4.19043L5.52869 5.1331L8.39069 7.9951L5.52869 10.8571L6.47135 11.7998Z" fill="black"/>
+      </svg>
+    </span>
+    <span>{{ article.title | upcase }}</span>
+
+  {% elsif template == 'cart' %}
+    <span>SHOPPING CART</span>
+
+  {% elsif template == 'search' %}
+    <span>SEARCH RESULTS</span>
+
+  {% else %}
+    <span>{{ page_title }}</span>
+  {% endif %}
+</nav>
+
+{% schema %}
+{
+  "name": "Breadcrumb",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumb",
+      "label": "Show Breadcrumb",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Breadcrumb",
+      "category": "Navigation"
+    }
+  ]
+}
+{% endschema %}

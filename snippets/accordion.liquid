@@ -1,0 +1,111 @@
+<div class="accordion">
+  {% for block in section.blocks %}
+    {% if block.type == 'accordion' %}
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <div>
+            {% if block.settings.icon != blank %}
+              <span class="accordion-icon">{{ block.settings.icon }}</span>
+            {% endif %}
+            {{ block.settings.title | upcase }}
+          </div>
+          <svg
+            class="accordion-toggle"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6022 9.36787C11.8219 9.1482 12.178 9.1482 12.3977 9.36787L18.1326 15.1027C18.3522 15.3224 18.3522 15.6785 18.1326 15.8982L17.8674 16.1634C17.6477 16.3831 17.2916 16.3831 17.0719 16.1634L12 11.0914L6.92802 16.1634C6.70834 16.3831 6.35224 16.3831 6.13257 16.1634L5.86737 15.8982C5.64769 15.6785 5.64769 15.3224 5.86737 15.1027L11.6022 9.36787Z" fill="black"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          {{ block.settings.content }}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<style>
+  .accordion{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    border-bottom: 1px solid black;
+  }
+  .accordion-item {
+    border-top: 1px solid black;
+
+  }
+  .accordion-header {
+    width: 100%;
+    padding: 16px 0px; 
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .accordion-icon {
+    margin-right: 10px;
+  }
+  .accordion-toggle {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  .accordion-content {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.2s ease-out, opacity 0.2s ease-out; /* smooth transition for both max-height and opacity */
+  }
+
+  .accordion-item.active .accordion-content {
+    display: block;
+    margin-bottom: 16px;
+  }
+  .accordion-item.active .accordion-toggle {
+    transform: rotate(180deg); /* Changes "+" to "×" when opened */
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let firstItem = document.querySelector(".accordion-item");
+    if (firstItem) {
+      firstItem.classList.add("active");
+      let firstContent = firstItem.querySelector(".accordion-content");
+      firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+      firstContent.style.opacity = "1";
+    }
+  });
+
+  function toggleAccordion(btn) {
+    let item = btn.parentElement;
+    let content = item.querySelector(".accordion-content");
+    let toggleSymbol = btn.querySelector(".accordion-toggle");
+
+    let isOpen = item.classList.contains("active");
+
+    if (!isOpen) {
+      item.classList.add("active");
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.opacity = "1";
+    } else {
+      item.classList.remove("active");
+      content.style.maxHeight = "0px";
+      content.style.opacity = "0";
+    }
+  }
+</script>
+
+ 

@@ -1,0 +1,24 @@
+{% if request.page_type == 'product' %}
+{%- unless avada_seo_ovr_product_ids contains product.id -%}
+{%- capture avada_seo_meta_title -%}NAMILIA - {{ product.title }} - Shop now{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}⚡️Buy our {{ product.title }} at the lowest price in {{ shop.address.country }} | ✓ GLOBAL SHIPPING | ✓ FAST FREE SHIPPING | ✓ 30 DAYS HASSLE-FREE RETURNS | Buy the original {{ product.title }} only at NAMILIA | DROP IS ENDING SOON!{%- endcapture -%}
+{% endunless %}
+{% endif %}
+
+{% if request.page_type == 'collection' %}
+{%- unless avada_seo_ovr_collection_ids contains collection.id -%}
+{%- capture avada_seo_meta_title -%}NAMILIA - Shop the Collection - {{ collection.title }}{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}Checkout our collection {{ collection.title }} at global.namilia.com | Best Price only here ✓ Free Shipping ✓ 30 days Hassle-Free Returns ✓ Best Offers ✓ Global Shipping | NAMILIA OFFICIAL{%- endcapture -%}
+{% endunless %}
+{% endif %}
+
+{% if avada_seo_meta_title %}
+{%- assign seo_title = avada_seo_meta_title | strip_html | strip -%}
+{%- assign page_title = seo_title -%}
+{%- assign og_title = seo_title -%}
+{% endif %}
+
+{% if avada_seo_meta_description %}
+{%- assign page_description = avada_seo_meta_description | strip_html | strip -%}
+{%- assign og_description = page_description -%}
+{% endif %}

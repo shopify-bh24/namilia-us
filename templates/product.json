@@ -1,0 +1,152 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_pN8zXW": {
+      "type": "breadcrumb",
+      "settings": {
+        "show_breadcrumb": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": "size-chart"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "3cf3946f-a799-4afd-a2e7-8b15a86e572a": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div id=\"ods-bis\"></div>"
+          }
+        },
+        "ef23cf96-d3c4-48cb-8f5a-359da5836a86": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"product-tabs__tab-item-content rte\">\n {{- product.description -}}</div>"
+          }
+        },
+        "accordion_cfHY3L": {
+          "type": "accordion",
+          "settings": {
+            "title": "details",
+            "content": "<p>{{ product.description }}</p>",
+            "icon": ""
+          }
+        },
+        "accordion_RhPTYb": {
+          "type": "accordion",
+          "settings": {
+            "title": "shipping",
+            "content": "<p>Namilia offers express delivery world-wide.</p><p>Choose your country to view delivery costs.</p><p>Orders are processed Monday – Friday, excluding bank holidays. </p>",
+            "icon": ""
+          }
+        },
+        "accordion_P9Pc7H": {
+          "type": "accordion",
+          "settings": {
+            "title": "returns",
+            "content": "<p>30 days after delivery. For more information, check our return policy here.</p>",
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "buy_buttons",
+        "3cf3946f-a799-4afd-a2e7-8b15a86e572a",
+        "ef23cf96-d3c4-48cb-8f5a-359da5836a86",
+        "accordion_cfHY3L",
+        "accordion_RhPTYb",
+        "accordion_P9Pc7H"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "b35161d5-8bd7-4930-a9ab-a7fa3aaa055a": {
+          "type": "trust",
+          "disabled": true,
+          "settings": {
+            "icon_1": "picto-customer-support",
+            "title_1": "Shipping & Returns",
+            "content_1": "<p>Add text about your shipping policy</p>",
+            "icon_2": "picto-warranty",
+            "title_2": "Warranty",
+            "content_2": "<p>Add text about your product warranty</p>",
+            "icon_3": "picto-box",
+            "title_3": "Secure Payment",
+            "content_3": "<p>Add text about your payment</p>"
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "b35161d5-8bd7-4930-a9ab-a7fa3aaa055a"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "You may also like",
+        "recommendations_count": 4,
+        "products": [],
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_pN8zXW",
+    "main",
+    "product-content",
+    "product-recommendations"
+  ]
+}

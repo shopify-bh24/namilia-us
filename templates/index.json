@@ -1,0 +1,649 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "featured_collections_Gg9LcK": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_fAXUc4": {
+          "type": "collection",
+          "settings": {
+            "collection": "sale",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_fAXUc4"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "USE CODE FINAL20HONEY for EXTRA 20% OFF",
+        "title": "FINAL SALE",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_overlay_fM3bKk": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify://shop_images/website_header_Kopie.jpg",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "newsletter_rQpaiV": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "SIGN UP NOW",
+        "content": "<p>BE THE FIRST AND GET EARLY ACCESS TO SHOP THE NAMILIA X ED HARDY COLLECTION AS SOON AS IT DROPS</p>",
+        "text_position": "right",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "ea49ef82-538f-462e-bc11-65c7754c3937": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/HeaderBomber.jpg",
+            "mobile_image": "shopify://shop_images/hochformat_mobile_bomber.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "POWER BOMBER RESTOCK",
+            "button_1_text": "EXPLORE",
+            "button_1_link": "shopify://products/power-shoulder-bomber-jacket",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "424ac43c-fd10-43c8-bc75-60a7c3e653d4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/header1_Kopie_Kopie.jpg",
+            "mobile_image": "shopify://shop_images/namilia-playboy-boots-leo_Kopie.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "PLAYBOY ACCESSORIES",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify://collections/playboy",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
+        "fcd3c1c0-eb54-4197-9696-a2f399405477": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/header1_Kopie.jpg",
+            "mobile_image": "shopify://shop_images/hochformat_Playboy_mobile_Kopie_2.jpg",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify://collections/playboy",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "3073d305-a98e-465a-a8ab-0086c3bc58d3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/HEADER_Office_Siren_Kopie-1.jpg",
+            "mobile_image": "shopify://shop_images/header-office-siren-mobile_Kopie-2.jpg",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "OFFICE SIREN",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify://collections/office-siren",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 19
+          }
+        },
+        "d7c8bb28-66de-4c77-93a0-a1d8bd77965e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/HEADER_ETERNITY_Kopie.jpg",
+            "mobile_image": "shopify://shop_images/HEADER_ETERNITY_mobile_Kopie_2.jpg",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "ETERNITY",
+            "button_1_text": "EXPLORE",
+            "button_1_link": "shopify://collections/eternity",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 19
+          }
+        }
+      },
+      "block_order": [
+        "ea49ef82-538f-462e-bc11-65c7754c3937",
+        "424ac43c-fd10-43c8-bc75-60a7c3e653d4",
+        "fcd3c1c0-eb54-4197-9696-a2f399405477",
+        "3073d305-a98e-465a-a8ab-0086c3bc58d3",
+        "d7c8bb28-66de-4c77-93a0-a1d8bd77965e"
+      ],
+      "settings": {
+        "section_height": "large",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 7,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "1ebace17-da16-4179-96af-76f13d6b80f6": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-products-excluding-route",
+            "label": "",
+            "button_text": "",
+            "button_url": "shopify://collections/all-products-excluding-route"
+          }
+        },
+        "d7c9e6f4-5bfd-45c4-9d58-8acd2078c865": {
+          "type": "collection",
+          "settings": {
+            "collection": "bossy",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "e3de2acb-e597-4275-81a2-faf41698cb70": {
+          "type": "collection",
+          "settings": {
+            "collection": "sale",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "22fae196-08a4-4013-b57c-b00b12b67df1": {
+          "type": "collection",
+          "settings": {
+            "collection": "turbo",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ebace17-da16-4179-96af-76f13d6b80f6",
+        "d7c9e6f4-5bfd-45c4-9d58-8acd2078c865",
+        "e3de2acb-e597-4275-81a2-faf41698cb70",
+        "22fae196-08a4-4013-b57c-b00b12b67df1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "products_count": 12,
+        "products_per_row": 6,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000"
+      }
+    },
+    "5d23d63a-c34c-4129-b928-ae986757e4fa": {
+      "type": "video",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=r_Tu3IDZ2Ss",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1661027521c2483549": {
+      "type": "apps",
+      "blocks": {
+        "eaf4cb1f-7343-40a2-aa9d-20deac5ea902": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "eaf4cb1f-7343-40a2-aa9d-20deac5ea902"
+      ],
+      "settings": {
+        "include_horizontal_margins": false,
+        "include_vertical_margins": false
+      }
+    },
+    "fc19d7de-68f4-4083-9128-61e5ff08c724": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify://shop_images/6F955ACC-21A6-4911-AC7B-7CC874C05382-min.gif",
+        "subheading": "",
+        "title": "party looks for all summer",
+        "content": "",
+        "button_text": "Shop now",
+        "button_link": "shopify://collections/coachella",
+        "link_style": "button",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify://shop_images/lieferung_256x256_crop_center_cad7dc0f-8af1-4086-9553-93d6b4e77024.webp",
+            "custom_icon_width": 50,
+            "title": "Free shipping over $250",
+            "content": "<p>Free standard shipping for orders over $250. <a href=\"/pages/shipping\" title=\"Shipping\">Check our shipping rates for details</a></p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify://shop_images/delivery-status_256x256_crop_center_ea0f9850-6514-453b-8370-5a56d890718a.webp",
+            "custom_icon_width": 50,
+            "title": "30 day returns",
+            "content": "<p>You can easily return your items within 30 days of arrival.</p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify://shop_images/express-delivery_256x256_crop_center_0571d66c-08df-40fc-90cb-bc033972c705.webp",
+            "custom_icon_width": 50,
+            "title": "Worldwide express Shipping",
+            "content": "<p>you can optionally select express shipping at our checkout</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3"
+      ],
+      "settings": {
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify://shop_images/HEADER_newsletter.jpg",
+        "subheading": "Subscribe to our newsletter",
+        "content": "<p>Promotions, new products and sales. Get secret pre-acces and much more.</p><p><br/>Directly to your inbox.</p>",
+        "text_position": "center",
+        "text_alignment": "left",
+        "text_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#1a1a1a",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "image-with-text-block": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify://shop_images/IMG_0608.jpg",
+        "mobile_image": "shopify://shop_images/IMG_0608.jpg",
+        "subheading": "new drop - end 22",
+        "title": "red speed racer",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "abba35ce-3105-4eb6-b501-8c6b674a35cb": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify://shop_images/banner2.jpg",
+        "subheading": "NAMILIA",
+        "title": "RUNWAY SHOWS",
+        "content": "<p>\"GOOD GIRL GONE BAD\"</p>",
+        "button_text": "explore",
+        "button_link": "shopify://pages/runway-collections",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "products-all",
+            "image": "shopify://shop_images/namilia_transformer_coat_front3_06fc20f9-7c92-4aac-8579-997d0e4cd2ce.jpg",
+            "subheading": "",
+            "title": "VEGAN LEATHER FOREVER",
+            "link_text": "SHOP NOW",
+            "link_url": "shopify://collections/products-all",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 33
+          }
+        },
+        "ef6bc816-2b6f-4ef8-916b-0b88083f1721": {
+          "type": "collection",
+          "settings": {
+            "collection": "arctic",
+            "image": "shopify://shop_images/Screen_Shot_2023-10-24_at_11.56.37.png",
+            "subheading": "",
+            "title": "STAY BUNDLED",
+            "link_text": "SHOP 'ARCTIC' NOW",
+            "link_url": "shopify://collections/arctic",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "afe7b912-9d00-40d8-8698-de910d684674": {
+          "type": "collection",
+          "settings": {
+            "collection": "jackets",
+            "image": "shopify://shop_images/IMG_6765.jpg",
+            "subheading": "",
+            "title": "explore spike shoulders",
+            "link_text": "Shop coats & jackets",
+            "link_url": "shopify://collections/jackets",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 13
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "get-ready",
+            "image": "shopify://shop_images/333672040_591513275887957_8850411264170508442_n.jpg",
+            "subheading": "",
+            "title": "get ready for festival season",
+            "link_text": "Shop now",
+            "link_url": "shopify://collections/backstage",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "ef6bc816-2b6f-4ef8-916b-0b88083f1721",
+        "afe7b912-9d00-40d8-8698-de910d684674",
+        "collection-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "collage",
+        "subheading": "Subheading",
+        "title": "Collection list",
+        "background": "#000000",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "settings": {
+        "reveal_on_scroll": true,
+        "label": "Shop the looks"
+      }
+    },
+    "a16f045e-9d4a-40ee-806c-112e53de21f9": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16513900904668__a16f045e-9d4a-40ee-806c-112e53de21f9-16745519576e696ab8-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "bodysuits",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16513900904668__a16f045e-9d4a-40ee-806c-112e53de21f9-16745519576e696ab8-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "products_count": 15,
+        "products_per_row": 6,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "#000000",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2b067fce-1bbc-4b50-ab15-c84a5245de67": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify://shop_images/celebrities.png",
+        "subheading": "NAMILIA",
+        "title": "CELEBRITIES",
+        "content": "<p>GLOBAL ICONS WEAR NAMILIA</p>",
+        "button_text": "EXPLORE",
+        "button_link": "shopify://pages/celebrities",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "1661431149da32b729": {
+      "type": "collection-list",
+      "blocks": {
+        "16614311484566e68f-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "image": "shopify://shop_images/Facetune_13-09-2023-13-52-21.jpg",
+            "subheading": "",
+            "title": "HOTTEST ACCESSORIES",
+            "link_text": "Shop now",
+            "link_url": "shopify://collections/accessories",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "16614311484566e68f-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "turbo",
+            "image": "shopify://shop_images/turbo_quer_Kopie_16d16558-22a6-4669-b77a-e333b562f449.jpg",
+            "subheading": "",
+            "title": "TURBO COLLECTION",
+            "link_text": "SHOP 'TURBO' NOW",
+            "link_url": "shopify://collections/turbo",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "16614311484566e68f-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "pornceptual",
+            "image": "shopify://shop_images/Screen_Shot_2023-08-16_at_11.22.09.png",
+            "subheading": "",
+            "title": "PORNCEPTUAL x namilia",
+            "link_text": "Shop 'DARKROOM' now",
+            "link_url": "shopify://collections/pornceptual",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "16614311484566e68f-3": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "best-sellers",
+            "image": "shopify://shop_images/Screen_Shot_2023-08-16_at_11.24.17.png",
+            "subheading": "",
+            "title": "Best sellers",
+            "link_text": "Shop now",
+            "link_url": "shopify://collections/best-sellers",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "16614311484566e68f-1",
+        "16614311484566e68f-0",
+        "16614311484566e68f-2",
+        "16614311484566e68f-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "collage",
+        "subheading": "",
+        "title": "",
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "featured_collections_Gg9LcK",
+    "image_with_text_overlay_fM3bKk",
+    "newsletter_rQpaiV",
+    "slideshow",
+    "featured-collections",
+    "5d23d63a-c34c-4129-b928-ae986757e4fa",
+    "1661027521c2483549",
+    "fc19d7de-68f4-4083-9128-61e5ff08c724",
+    "text-with-icons",
+    "newsletter",
+    "image-with-text-block",
+    "abba35ce-3105-4eb6-b501-8c6b674a35cb",
+    "collection-list",
+    "shop-the-look",
+    "a16f045e-9d4a-40ee-806c-112e53de21f9",
+    "2b067fce-1bbc-4b50-ab15-c84a5245de67",
+    "1661431149da32b729"
+  ]
+}
