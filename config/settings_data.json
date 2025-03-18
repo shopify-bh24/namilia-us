@@ -126,7 +126,7 @@
             "settings": {
               "menu_item": "Collections",
               "images_position": "right",
-              "image_1": "shopify://shop_images/Bildschirmfoto_2025-03-11_um_12.02.47.png",
+              "image_1": "shopify://shop_images/namilia_COLLECTIONS_420px.png",
               "image_1_heading": "",
               "image_1_text": "",
               "image_1_link": "",
@@ -152,7 +152,7 @@
             "settings": {
               "menu_item": "SHOP",
               "images_position": "right",
-              "image_1": "shopify://shop_images/Bildschirmfoto_2025-03-11_um_12.02.47.png",
+              "image_1": "shopify://shop_images/namilia_SHOP_420px.png",
               "image_1_heading": "",
               "image_1_text": "",
               "image_1_link": "",
@@ -239,7 +239,7 @@
           "logo": "shopify://shop_images/NAMILIA-Logo-White2_310x_3535e0ba-14d7-49b0-b0fe-3fd999d6725e.png",
           "logo_max_width": 155,
           "mobile_logo_max_width": 100,
-          "navigation_menu": "redesigned-menu",
+          "navigation_menu": "redesigned-menudesktop",
           "sidebar_navigation_menu": "redesigned-menu",
           "header_layout": "logo_center_navigation_inline",
           "show_icons": true,
