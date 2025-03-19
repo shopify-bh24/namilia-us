@@ -89,9 +89,9 @@
 
                         <collapsible-content id="mobile-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}" class="collapsible">
                           <ul class="mobile-nav list--unstyled" role="list">
-                            {%- for sub_sub_link in sub_link.links -%}
+                            {%- for sub_sub_link in sub_link.links -%}  
                               <li class="mobile-nav__item" data-level="3">
-                                <a href="{{ sub_sub_link.url }}" class="mobile-nav__link">{{ sub_sub_link.title }}</a>
+                                <a href="{{ sub_sub_link.url }}" class="mobile-nav__link sub_{{ sub_sub_link.title | downcase }}">{{ sub_sub_link.title }}</a>
                               </li>
                             {%- endfor -%}
                           </ul>
@@ -113,7 +113,7 @@
               {%- endif -%}
             </collapsible-content>
           {%- else -%}
-            <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">{{ link.title }}</a>
+            <a href="{{ link.url }}" class="mobile-nav__link heading {{ link.title | downcase }} {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">{{ link.title }}</a>
           {%- endif -%}
         </li>
       {%- endfor -%}

@@ -13319,6 +13319,13 @@ shopify-payment-terms {
 .product-list--center .product-list__inner {
   justify-content: safe center;
   /* For some reason it does not work in RTL on Chrome */
+  padding: 0px 18px;
+}
+
+.sale,
+.sub_most,
+.sub_x-rated {
+  color: #fb52c9 !important;
 }
 
 @media screen and (max-width: 740px) {
