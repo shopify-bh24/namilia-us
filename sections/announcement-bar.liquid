@@ -81,11 +81,11 @@
       /* Add your font styles here */
   }
 </style>
-
-<a href="{{section.settings.hyper_link }}" class="global-banner-container">
-  <div class="global-banner-scroll"></div>
-</a>
-
+{% if section.settings.show_announcement %}
+  <a href="{{section.settings.hyper_link }}" class="global-banner-container">
+    <div class="global-banner-scroll"></div>
+  </a>
+{% endif %}
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const bannerScroll = document.querySelector(".global-banner-scroll");
@@ -194,6 +194,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Show Announcement Bar",
+      "default": false
+    },
     {
       "type": "url",
       "id": "hyper_link",
