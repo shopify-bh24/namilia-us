@@ -65,51 +65,9 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "message-1": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "ONLINE SAMPLE SALE NOW",
-              "learn_more_text": "",
-              "title": "Online Sample Sale",
-              "content": "<p></p><p>unique samples, one off never produced styles, up to 90% off on old stock</p>",
-              "button_text": "Go to samplesale",
-              "button_link": "https://samplesale.namilia.com/"
-            }
-          },
-          "74ed95d4-6578-4966-aa9a-e54da7598636": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "BLACK WEEK SALE - UP TO 70% OFF",
-              "learn_more_text": "Learn more",
-              "title": "",
-              "content": "",
-              "button_text": "",
-              "button_link": "shopify://collections/sweat"
-            }
-          },
-          "693b81b5-f43a-4552-886e-61ea3b123459": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "SINGLES DAY SALE: BUY ONE GET ONE 30% OFF ALL ETERNITY SWEATSUITS",
-              "learn_more_text": "",
-              "title": "",
-              "content": "",
-              "button_text": "",
-              "button_link": "shopify://collections/sweat"
-            }
-          }
-        },
-        "block_order": [
-          "message-1",
-          "74ed95d4-6578-4966-aa9a-e54da7598636",
-          "693b81b5-f43a-4552-886e-61ea3b123459"
-        ],
         "custom_css": [],
         "settings": {
+          "show_announcement": false,
           "hyper_link": "",
           "background": "#000000",
           "text_color": "#ffffff",

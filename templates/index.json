@@ -81,6 +81,25 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "3073d305-a98e-465a-a8ab-0086c3bc58d3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DAYTONA_banner_Kopie.jpg",
+            "mobile_image": "shopify://shop_images/DAYTONA_MOBILE.gif",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "DAYTONA",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify://collections/daytona",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 19
+          }
+        },
         "ea49ef82-538f-462e-bc11-65c7754c3937": {
           "type": "image",
           "settings": {
@@ -138,25 +157,6 @@
             "overlay_opacity": 20
           }
         },
-        "3073d305-a98e-465a-a8ab-0086c3bc58d3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/HEADER_Office_Siren_Kopie-1.jpg",
-            "mobile_image": "shopify://shop_images/header-office-siren-mobile_Kopie-2.jpg",
-            "text_position": "bottom_center",
-            "subheading": "",
-            "title": "OFFICE SIREN",
-            "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify://collections/office-siren",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 19
-          }
-        },
         "d7c8bb28-66de-4c77-93a0-a1d8bd77965e": {
           "type": "image",
           "settings": {
@@ -178,10 +178,10 @@
         }
       },
       "block_order": [
+        "3073d305-a98e-465a-a8ab-0086c3bc58d3",
         "ea49ef82-538f-462e-bc11-65c7754c3937",
         "424ac43c-fd10-43c8-bc75-60a7c3e653d4",
         "fcd3c1c0-eb54-4197-9696-a2f399405477",
-        "3073d305-a98e-465a-a8ab-0086c3bc58d3",
         "d7c8bb28-66de-4c77-93a0-a1d8bd77965e"
       ],
       "settings": {
