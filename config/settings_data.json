@@ -68,11 +68,11 @@
         "custom_css": [],
         "settings": {
           "show_announcement": true,
-          "hyper_link": "shopify://collections/bestseller",
+          "hyper_link": "shopify://collections/daytona",
           "background": "#000000",
           "text_color": "#ffffff",
           "text_1": "DAYTONA drop out now",
-          "text_2": "shop best sellers",
+          "text_2": "pole position attitude",
           "scroll_speed": 40
         }
       },
