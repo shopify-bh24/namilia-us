@@ -442,15 +442,6 @@
       "sections": {
         "announcement-bar": {
           "type": "announcement-bar",
-          "blocks": {
-            "message-1": {
-              "type": "message",
-              "settings": {}
-            }
-          },
-          "block_order": [
-            "message-1"
-          ],
           "settings": {
             "background": "#f3ff34",
             "text_color": "#282828"
@@ -541,15 +532,6 @@
       "sections": {
         "announcement-bar": {
           "type": "announcement-bar",
-          "blocks": {
-            "message-1": {
-              "type": "message",
-              "settings": {}
-            }
-          },
-          "block_order": [
-            "message-1"
-          ],
           "settings": {
             "background": "#f7aea6",
             "text_color": "#56112a"
@@ -645,15 +627,6 @@
       "sections": {
         "announcement-bar": {
           "type": "announcement-bar",
-          "blocks": {
-            "message-1": {
-              "type": "message",
-              "settings": {}
-            }
-          },
-          "block_order": [
-            "message-1"
-          ],
           "settings": {
             "background": "#051e38",
             "text_color": "#ffffff"
@@ -746,15 +719,6 @@
       "sections": {
         "announcement-bar": {
           "type": "announcement-bar",
-          "blocks": {
-            "message-1": {
-              "type": "message",
-              "settings": {}
-            }
-          },
-          "block_order": [
-            "message-1"
-          ],
           "settings": {
             "background": "#ffe5db",
             "text_color": "#0c1b54"
