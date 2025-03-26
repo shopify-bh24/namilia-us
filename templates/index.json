@@ -198,10 +198,10 @@
         "1ebace17-da16-4179-96af-76f13d6b80f6": {
           "type": "collection",
           "settings": {
-            "collection": "all-products-excluding-route",
+            "collection": "all-products",
             "label": "",
             "button_text": "",
-            "button_url": "shopify://collections/all-products-excluding-route"
+            "button_url": "shopify://collections/all-products"
           }
         },
         "d7c9e6f4-5bfd-45c4-9d58-8acd2078c865": {
