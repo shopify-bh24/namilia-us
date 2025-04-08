@@ -396,6 +396,11 @@
         "type": "shopify://apps/ordersify-restocked-alerts/blocks/app-embed/903b5cdc-6e3f-4b2d-a8ea-d1ade7f41610",
         "disabled": false,
         "settings": {}
+      },
+      "17676059084223943535": {
+        "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
