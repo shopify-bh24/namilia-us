@@ -9,12 +9,26 @@
  */
 {
   "sections": {
+    "trust_banner_PrMVGL": {
+      "type": "trust-banner",
+      "settings": {
+        "link_url": "shopify://pages/faq",
+        "trust_message_1": "30-Day Return Policy",
+        "trust_message_2": "Free Shipping Over $250",
+        "trust_message_3": "Express Shipping Available",
+        "animation_duration": 3,
+        "animation_type": "fade"
+      }
+    },
     "product-grid": {
       "type": "collection-template-boost-pfs-filter",
-      "settings": {}
+      "settings": {
+        "navigation_menu": "main-menu"
+      }
     }
   },
   "order": [
+    "trust_banner_PrMVGL",
     "product-grid"
   ]
 }
