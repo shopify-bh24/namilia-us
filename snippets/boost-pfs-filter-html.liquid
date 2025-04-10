@@ -5,7 +5,7 @@
 {% raw %}
 <div class="boost-pfs-filter-product-item boost-pfs-filter-product-item-grid {{gridWidthClass}}{{soldOutClass}}{{saleClass}} {{itemActiveSwapClass}}">
     <div class="boost-pfs-filter-product-item-inner">
-        <div class="boost-pfs-filter-product-item-image">
+        <div class="boost-pfs-filter-product-item-image assdasa">
             {{itemImages}}
             <div class="boost-pfs-filter-product-item-label">{{itemLabels}}{{itemTagLabels}}</div>
         </div>
@@ -17,7 +17,7 @@
             {{itemReviews}}
             {{itemPrice}}
             {{itemSwatches}}
-        </div>
+        </div> 
     </div>
 </div>
 {% endraw %}
@@ -75,7 +75,7 @@
 </span>
 
 {%- when 'saleLabelHtml' -%}
-<span class="sale boost-pfs-filter-label boost-pfs-filter-label-display-{{- sale_label_display -}}">
+<span class="sale boost-pfs-filter-label boost-pfs-filter-label-display-{{- sale_label_display -}} span_badge" style="color: white !important; background: black !important; padding: 2px 8px !important;">
   {% if sale_label_display == 'image' %}
   <img src="{{sale_label_img | img_url: 'medium'}}" alt="Sale" />
   {% else %}
@@ -145,7 +145,13 @@
 
 {%- when 'sortingHtml' -%}
 
-<button class="boost-pfs-filter-top-sorting-wrapper" aria-label="{%- assign temp = 'collections.sorting.title' | t  -%} {%- unless temp contains 'translation missing'  -%} {{- temp -}} {%- else -%} Sorting {%- endunless -%}"><span aria-hidden="true"><span aria-hidden="true"> {%- assign temp = 'collections.sorting.title' | t  -%} {%- unless temp contains 'translation missing'  -%} {{- temp -}} {%- else -%} Sorting {%- endunless -%}</span></span></button>
+<button class="desktop_sort_button boost-pfs-filter-top-sorting-wrapper" aria-label="{%- assign temp = 'collections.sorting.title' | t  -%} {%- unless temp contains 'translation missing'  -%} {{- temp -}} {%- else -%} Sorting {%- endunless -%}">
+  <span aria-hidden="true">
+    <span aria-hidden="true">
+      {%- assign temp = 'collections.sorting.title' | t  -%} {%- unless temp contains 'translation missing'  -%} {{- temp -}} {%- else -%} Sorting {%- endunless -%}
+    </span>
+  </span>
+</button>
 {% raw %}
 <ul class="boost-pfs-filter-filter-dropdown">{{sortingItems}}</ul>
 {% endraw %}
@@ -175,6 +181,5 @@
 
 {%- endcase -%}
 {%- endcapture -%}
-
 {%- assign str = '}}' -%}
 {{- bc_layout | json | replace: '[[', '{{' | replace: ']]', str -}}

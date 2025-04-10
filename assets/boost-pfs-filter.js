@@ -957,7 +957,7 @@ function equalHeight(data) {
       var height = jQ(item).find('.boost-pfs-filter-product-bottom-inner').height();
       max = Math.max(max, height);
     }
-    jQ(equal_els[i]).find('.boost-pfs-filter-product-bottom-inner').css({ 'min-height': max });
+    // jQ(equal_els[i]).find('.boost-pfs-filter-product-bottom-inner').css({ 'min-height': max });   
   }
 
   var aspect_ratio = boostPFSFilterConfig.general.aspect_ratio;

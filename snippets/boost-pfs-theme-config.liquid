@@ -1,7 +1,7 @@
 {%- comment -%} VERSION: 1.0.0 Please do not delete this line. {%- endcomment -%}
 <script>
-// Declare boostPFSThemeConfig variable
-var boostPFSThemeConfig = {
+  // Declare boostPFSThemeConfig variable 
+  var boostPFSThemeConfig = {
   label: {
     sorting_heading: {%- assign temp = 'collections.sorting.title' | t  -%} {%- unless temp contains 'translation missing'  -%} "{{ temp }}" {%- else -%} "Sorting" {%- endunless -%},
     sorting_best_selling: {%- assign temp = 'collections.sorting.best_selling' | t -%} {%- unless temp contains 'translation missing'  -%} "{{ temp }}" {%- else -%} "Best Selling" {%- endunless -%},
@@ -25,7 +25,7 @@ var boostPFSThemeConfig = {
     sale: {{ label_sale | default: 'Sale' | json }},
     sold_out: {{ label_soldout | default: 'Sold Out' | json }},
     from: {{ label_from | default: 'From' | json }},
-    label_sale_percent: {{ label_sale_percent | default: '' | json }}
+    label_sale_percent: {{ label_sale_percent | default: '' | json }} 
   },
   custom: {
     layout_type: {{ layout_type | default: 'box' | json }},
@@ -64,10 +64,10 @@ var boostPFSThemeConfig = {
     product_item_type: {{ product_item_type | default: 'grid' | json }},
     filter_tree_horizontal_style: {{ filter_tree_horizontal_style | json }}
   }
-};
+  };
 
-// Declare Templates
-var boostPFSTemplate = {
+  // Declare Templates
+  var boostPFSTemplate = {
   'soldOutClass': ' sold-out',
   'saleClass': ' on-sale',
   'soldOutLabelHtml': {%- render 'boost-pfs-filter-html', layout: 'soldOutLabelHtml', label_soldout: label_soldout, sold_out_display: sold_out_display, sold_out_img: sold_out_img -%},
@@ -99,5 +99,5 @@ var boostPFSTemplate = {
   'breadcrumbDivider': {%- render 'boost-pfs-filter-html', layout: 'breadcrumbDivider' -%},
   'breadcrumbItemLink': {%- render 'boost-pfs-filter-html', layout: 'breadcrumbItemLink' -%},
   'breadcrumbItemSelected': {%- render 'boost-pfs-filter-html', layout: 'breadcrumbItemSelected' -%},
-};
+  };
 </script>

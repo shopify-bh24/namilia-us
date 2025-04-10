@@ -1,0 +1,246 @@
+<style>
+  .desktop_navigation_container {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    margin-bottom: 16px;
+    overflow: auto;
+    justify-content: center;
+  }
+
+  .desktop_navigation-item {
+    border: 1px solid black;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-family: 'DrukWide Medium';
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  #category-container{
+    display: flex;
+    gap: 12px;
+    margin: 0px 8px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .desktop_navigation_container {
+      justify-content: unset;
+    }
+    .desktop_navigation-item {
+      width: max-content;
+    }
+  }
+
+  .desktop_navigation-item:hover,
+  .desktop_navigation-item.selected {
+    color: white;
+    background: black;
+  }
+
+  #saved-menu-title,
+  #saved-category-title {
+    text-align: center;
+    font-family: 'DrukWide Medium';
+    margin-bottom: 32px !important;
+    margin-top: 0;
+    font-size: 24px; /* Fixed the syntax */
+    text-transform: uppercase;
+  }
+
+  #saved-menu-breadcrumb, #saved-category-breadcrumb {
+    text-transform: uppercase;
+  }
+  
+  #saved-category-breadcrumb{
+    margin-top: 1px;
+
+  }
+
+  .collection_breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .collection_breadcrumb a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .collection_breadcrumb span {
+    text-overflow: ellipsis; /* Add "..." when text overflows */
+    overflow: hidden;
+    max-width: 100%; /* Adjust as needed */
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .collection_breadcrumb a:hover {
+    color: #fb52c9;
+  }
+
+  .collection_breadcrumb .separator {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    min-width: 16px;
+  }
+
+  @media screen and (max-width: 1600px) {
+    .collection_breadcrumb {
+      padding-left: 0px;
+      padding-right: 10px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .collection_breadcrumb {
+      padding-left: 0px;
+      gap: 2px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .collection_breadcrumb {
+      display: none;
+    }
+  }
+</style>
+
+
+
+<nav class="container collection_breadcrumb">
+  <a href="{{ routes.root_url }}">HOME</a>
+  <span class="separator">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="#AAAAAA">
+      <path d="M6.47135 11.7998L10.276 7.9951L6.47135 4.19043L5.52869 5.1331L8.39069 7.9951L5.52869 10.8571L6.47135 11.7998Z" fill="black"/>
+    </svg>
+  </span>
+  <a href="https://namilia.com/collections/all-products" onclick="savebreadcrumbTitle(event)">
+    <span  id="saved-menu-breadcrumb"></span> 
+  </a>
+  
+  {% assign collectionPrefix = '/collections/' %}
+  {% assign path = request.path | remove_first: collectionPrefix %}
+  {% assign collectionItems = path | split: '/' %}
+
+  {% if collectionItems.size == 1 and collectionItems[0] != 'all-products' %}
+    <span class="separator">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="#AAAAAA">
+        <path d="M6.47135 11.7998L10.276 7.9951L6.47135 4.19043L5.52869 5.1331L8.39069 7.9951L5.52869 10.8571L6.47135 11.7998Z" fill="black"/>
+      </svg>
+    </span>
+    <span id="saved-category-breadcrumb">{{ collectionItems[0] | upcase }}</span>
+  {% endif %}
+</nav>
+
+<desktop-navigation>
+  {% assign collectionPrefix = '/collections/' %}
+  {% assign path = request.path | remove_first: collectionPrefix %}
+  {% assign collectionItems = path | split: '/' %}
+
+  {% if collectionItems.size == 1 and collectionItems[0] == 'all-products' %}
+    <!-- Show this if the URL is "/collections/all-products" -->
+    <h3 id="saved-menu-title"></h3>
+
+    <div class="desktop_navigation_container">
+      <div id="category-container">
+        <!-- Your category list goes here -->
+      </div>
+    </div>
+  {% elsif collectionItems.size == 1 %}
+    <!-- Show this if the URL has only one other collection item -->
+    <h3 id="saved-category-title">{{ collectionItems[0] | capitalize }}</h3>
+  {% endif %}
+</desktop-navigation>
+
+<script>
+  // Get category list from localStorage
+  let categoryList = localStorage.getItem('categoryList');
+
+if (categoryList) {
+  categoryList = JSON.parse(categoryList);
+  let categoryContainer = document.getElementById('category-container');
+
+  let listHTML = '';
+  const allowedTitles = ['new in', 'most wanted', 'x-rated', 'sale', 'daytona', 'playboy x namilia', 'trinity', 'eternity'];
+
+  categoryList.forEach((item) => {
+    if (allowedTitles.includes(item.title.toLowerCase())) {
+      listHTML += `
+        <a class="desktop_navigation-item" 
+           href="${item.url}" 
+           onclick="saveClickedCategory(event, '${item.title}')">
+          ${item.title}
+        </a>`;
+    }
+  });
+
+  categoryContainer.innerHTML = listHTML;
+}
+
+
+
+  // Function to save clicked category
+  function saveClickedCategory(event, categoryTitle) {
+    event.preventDefault(); // Prevent default navigation
+    localStorage.setItem('selectedCategory', categoryTitle);
+    window.location.href = event.currentTarget.href; // Proceed with navigation
+  }
+
+</script>
+
+<script>
+  function updateBreadcrumbContent() {
+    var selectedMenu = localStorage.getItem('selectedMenuTitle');
+    var selectedCategory = localStorage.getItem('selectedCategory');
+    
+    // Always show SHOP ALL when in collections
+    if (window.location.pathname.includes('/collections/')) {
+      if(selectedMenu == 'Shop') {
+        document.getElementById('saved-menu-breadcrumb').textContent = 'SHOP ALL';
+      }
+      else {
+        document.getElementById('saved-menu-breadcrumb').textContent = selectedMenu;
+      }
+    }
+    
+    if (selectedMenu) {
+      if(selectedMenu == 'Shop') {
+        document.getElementById('saved-menu-title').textContent = 'Shop All';
+        document.getElementById('saved-menu-breadcrumb').textContent = 'Shop All';
+      } else {
+        document.getElementById('saved-menu-title').textContent = selectedMenu;
+        document.getElementById('saved-menu-breadcrumb').textContent = selectedMenu;
+      }
+    }
+    
+    if (selectedCategory) {
+      document.getElementById('saved-category-title').textContent = selectedCategory;
+      document.getElementById('saved-category-breadcrumb').textContent = selectedCategory;
+    }
+  }
+
+  // Run on initial load
+  document.addEventListener('DOMContentLoaded', updateBreadcrumbContent);
+  
+  // Run on every page render (including back/forward navigation)
+  window.addEventListener('pageshow', updateBreadcrumbContent);
+  
+  // Run on page visibility change
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) {
+      updateBreadcrumbContent();
+    }
+  });
+
+  // Run on history changes
+  window.addEventListener('popstate', updateBreadcrumbContent);
+</script>

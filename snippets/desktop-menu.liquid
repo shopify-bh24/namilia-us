@@ -1,5 +1,8 @@
 <desktop-navigation>
-  <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
+  <ul
+    class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}"
+    role="list"
+  >
     {%- for link in menu.links -%}
       {%- assign link_title_downcase = link.title | strip | downcase -%}
       {%- assign mega_menu_block = '' -%}
@@ -14,8 +17,19 @@
         {%- endif -%}
       {%- endfor -%}
 
-      <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
-        <a class="header__linklist-link link--animated {{link.title | downcase }}" href="{{ link.url }}" {% if link.links.size > 0 or mega_menu_block != '' %}aria-controls="desktop-menu-{{ forloop.index }}" aria-expanded="false"{% endif %}>
+      <li
+        class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}"
+        data-item-title="{{ link.title | escape }}"
+      >
+        <a
+          class="header__linklist-link link--animated {{link.title | downcase }}"
+          href="{{ link.url }}"
+          data-title="{{ link.title }}"
+          {% if link.links.size > 0 or mega_menu_block != '' %}
+            aria-controls="desktop-menu-{{ forloop.index }}" aria-expanded="false"
+          {% endif %}
+          onclick="saveMenuTitle(event)"
+        >
           {{- link.title -}}
         </a>
 
@@ -59,14 +73,18 @@
               {%- endif -%}
             {%- endfor -%}
           {%- endcapture -%}
-
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
-            <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" {{ mega_menu_block.shopify_attributes }}>
-              
+            <div
+              hidden
+              id="desktop-menu-{{ forloop.index }}"
+              class="mega-menu"
+              {{ mega_menu_block.shopify_attributes }}
+            >
               <div class="container">
-                
-               {%- if mega_menu_block.settings.images_position == 'right' and mega_menu_images != blank -%} <div class="mega-menu__nam-image">{{- mega_menu_images -}}</div> {% endif %} 
-                
+                {%- if mega_menu_block.settings.images_position == 'right' and mega_menu_images != blank -%}
+                  <div class="mega-menu__nam-image">{{- mega_menu_images -}}</div>
+                {% endif %}
+
                 <div class="mega-menu__inner">
                   {%- if link.links.size > 0 -%}
                     <div class="mega-menu__columns-wrapper">
@@ -75,14 +93,25 @@
                           {%- if sub_link.url == '#' -%}
                             <span class="mega-menu__title heading heading--small">{{ sub_link.title }}</span>
                           {%- else -%}
-                            <a href="{{ sub_link.url }}" class="mega-menu__title heading heading--small">{{ sub_link.title }}</a>
+                            <a href="{{ sub_link.url }}" class="mega-menu__title heading heading--small">
+                              {{- sub_link.title -}}
+                            </a>
                           {%- endif -%}
 
                           {%- if sub_link.links.size > 0 -%}
                             <ul class="linklist list--unstyled" role="list">
                               {%- for sub_sub_link in sub_link.links -%}
                                 <li class="linklist__item">
-                                  <a href="{{ sub_sub_link.url }}" class="link--faded sub_{{sub_sub_link.title | downcase }}">{{ sub_sub_link.title }}</a>
+                                  <a
+                                    href="{{ sub_sub_link.url }}"
+                                    subcollection-title="{{ sub_sub_link.title }}"
+                                    data-title="{{ link.title }}"
+
+                                    onclick="saveCategoryTitle(event)"   
+                                    class="link--faded sub_{{sub_sub_link.title | downcase }}"
+                                  >
+                                    {{- sub_sub_link.title -}}
+                                  </a>
                                 </li>
                               {%- endfor -%}
                             </ul>
@@ -92,20 +121,33 @@
                     </div>
                   {%- endif -%}
                   {% comment %}
-                  {%- if mega_menu_block.settings.images_position == 'right' and mega_menu_images != blank -%}
+                    {%- if mega_menu_block.settings.images_position == 'right' and mega_menu_images != blank -%}
                     <div class="mega-menu__images-wrapper {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}">
-                      {{- mega_menu_images -}}
+                    {{- mega_menu_images -}}
                     </div>
-                  {%- endif -%}{% endcomment %}
-                </div> 
+                    {%- endif -%}
+                  {% endcomment %}
+                </div>
               </div>
             </div>
           {%- endif -%}
         {%- elsif link.links.size > 0 -%}
-          <ul hidden id="desktop-menu-{{ forloop.index }}" class="nav-dropdown {% if link.levels == 1 %}nav-dropdown--restrict{% endif %} list--unstyled" role="list">
+          <ul
+            hidden
+            id="desktop-menu-{{ forloop.index }}"
+            class="nav-dropdown {% if link.levels == 1 %}nav-dropdown--restrict{% endif %} list--unstyled"
+            role="list"
+          >
             {%- for sub_link in link.links -%}
               <li class="nav-dropdown__item {% if sub_link.links.size > 0 %}has-dropdown{% endif %}">
-                <a class="nav-dropdown__link link--faded" href="{{ sub_link.url }}" {% if sub_link.links.size > 0 %}aria-controls="desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}" aria-expanded="false"{% endif %}>
+                <a
+                  class="nav-dropdown__link link--faded"
+                  href="{{ sub_link.url }}"
+                  {% if sub_link.links.size > 0 %}
+                    aria-controls="desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                    aria-expanded="false"
+                  {% endif %}
+                >
                   {{- sub_link.title -}}
 
                   {%- if sub_link.links.size > 0 -%}
@@ -114,12 +156,19 @@
                 </a>
 
                 {%- if sub_link.links.size > 0 -%}
-                  <ul hidden id="desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}" class="nav-dropdown list--unstyled" role="list">
+                  <ul
+                    hidden
+                    id="desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                    class="nav-dropdown list--unstyled"
+                    role="list"
+                  >
                     {%- for sub_sub_link in sub_link.links -%}
                       <li class="nav-dropdown__item">
-                        <a class="nav-dropdown__link link--faded" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a>
+                        <a class="nav-dropdown__link link--faded" href="{{ sub_sub_link.url }}">
+                          {{- sub_sub_link.title -}}
+                        </a>
                       </li>
-                    {%- endfor -%} 
+                    {%- endfor -%}
                   </ul>
                 {%- endif -%}
               </li>
@@ -130,3 +179,131 @@
     {%- endfor -%}
   </ul>
 </desktop-navigation>
+
+{% comment %}
+  <script>
+    function saveMenuTitle(event) {
+      // Get the clicked menu item's title
+      var menu_name = event.currentTarget.getAttribute('data-title');
+
+      // Store it in localStorage
+      localStorage.setItem('selectedMenuTitle', menu_name);
+
+
+
+      let categoryItems = [];
+
+      {% for link in linklists['redesigned-menudesktop'].links %}
+        {% if link.title == menu_name %}
+          {% for child_link in link.links %}
+            {% if child_link.links.size > 0 %}
+              {% for grandchild_link in child_link.links %}
+                categoryItems.push({
+                  title: "{{ grandchild_link.title }}",
+                  url: "{{ grandchild_link.url }}"
+                });
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+      // Save to localStorage
+      localStorage.setItem("categoryList", JSON.stringify(categoryItems));
+    }
+  </script>
+{% endcomment %}
+
+<script>
+  // Store all menu data in a JavaScript object
+  var menuData = [];
+
+  {% for link in linklists['redesigned-menudesktop'].links %}
+    var childLinks = [];
+
+    {% for child_link in link.links %}
+      var grandchildLinks = [];
+
+      {% for grandchild_link in child_link.links %}
+        grandchildLinks.push({
+          title: "{{ grandchild_link.title }}",
+          url: "{{ grandchild_link.url }}"
+        });
+      {% endfor %}
+
+      childLinks.push({
+        title: "{{ child_link.title }}",
+        children: grandchildLinks
+      });
+    {% endfor %}
+
+    menuData.push({
+      title: "{{ link.title }}",
+      children: childLinks
+    });
+  {% endfor %}
+
+  function saveMenuTitle(event) {
+    var menu_name = event.currentTarget.getAttribute('data-title');
+
+
+    if (menu_name.toLowerCase() !== 'shop' && menu_name.toLowerCase() !== 'collections') {
+      localStorage.setItem('selectedMenuTitle', 'Shop');
+    }
+    else{
+      localStorage.setItem('selectedMenuTitle', menu_name);
+    }
+
+    // Find the menu data based on the selected title
+    var selectedMenu = menuData.find(menu => menu.title === menu_name);
+
+    // Extract grandchild categories
+    let categoryItems = [];
+    if (selectedMenu && selectedMenu.children.length > 0) {
+      selectedMenu.children.forEach(child => {
+        if (child.children.length > 0) {
+          child.children.forEach(grandchild => {
+            categoryItems.push(grandchild);
+          });
+        }
+      });
+    }
+
+    // Save categories to localStorage
+
+    localStorage.setItem("categoryList", JSON.stringify(categoryItems));
+
+  }
+
+  function saveCategoryTitle(event) {
+    var category_name = event.currentTarget.getAttribute('subcollection-title')
+    
+    localStorage.setItem('selectedCategory', category_name);
+
+    var menu_name = event.currentTarget.getAttribute('data-title');
+
+    if (menu_name.toLowerCase() !== 'shop' && menu_name.toLowerCase() !== 'collections') {
+      localStorage.setItem('selectedMenuTitle', 'Shop');
+    }
+    else{
+      localStorage.setItem('selectedMenuTitle', menu_name);
+    }
+
+    var selectedMenu = menuData.find(menu => menu.title === menu_name);
+
+    // Extract grandchild categories
+    let categoryItems = [];
+    if (selectedMenu && selectedMenu.children.length > 0) {
+      selectedMenu.children.forEach(child => {
+        if (child.children.length > 0) {
+          child.children.forEach(grandchild => {
+            categoryItems.push(grandchild);
+          });
+        }
+      });
+    }
+
+    // Save categories to localStorage
+    localStorage.setItem("categoryList", JSON.stringify(categoryItems));
+  }
+</script>

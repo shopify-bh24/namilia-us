@@ -1,0 +1,137 @@
+{% schema %}
+  {
+    "name": "Trust Banner",
+    "settings": [
+      {
+        "type": "url",
+        "id": "link_url",
+        "label": "Set URL"
+      },
+      {
+        "type": "text",
+        "id": "trust_message_1",
+        "label": "Trust Message 1",
+        "default": "30-Day Return Policy"
+      },
+      {
+        "type": "text",
+        "id": "trust_message_2",
+        "label": "Trust Message 2",
+        "default": "Free Shipping Over $250"
+      },
+      {
+        "type": "text",
+        "id": "trust_message_3",
+        "label": "Trust Message 3",
+        "default": "Express Shipping Available"
+      },
+      {
+        "type": "range",
+        "id": "animation_duration",
+        "label": "Slide Duration (seconds)",
+        "min": 2,
+        "max": 10,
+        "step": 1,
+        "default": 3
+      }, {
+        "type": "select",
+        "id": "animation_type",
+        "label": "Animation Type",
+        "options": [
+          {
+            "value": "fade",
+            "label": "Fade"
+          }, {
+            "value": "slide",
+            "label": "Slide"
+          }, {
+            "value": "zoom",
+            "label": "Zoom"
+          }
+        ],
+        "default": "fade"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Trust Banner",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
+
+<div class="trust-banner" >
+  <div class="trust-carousel" data-animation="{{ section.settings.animation_type }}">
+    {% assign trust_items = section.settings.trust_message_1 | append: "|" | append: section.settings.trust_message_2 | append: "|" | append: section.settings.trust_message_3 | split: "|" %}
+
+    {% for item in trust_items %}
+      <a href="{{section.settings.link_url}}" class="trust-slide{% if forloop.first %} active{% endif %}">
+        {{ item | upcase }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .trust-banner {
+    width: 100%;
+    background: #eeeeee;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    /* Ensures the section has a visible height */
+  }
+  .trust-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 12px 0;
+    letter-spacing: 2px;
+
+  }
+  .trust-slide {
+    min-width: 100%;
+    position: absolute;
+    text-align: center;
+    transition: opacity 1s ease-in-out
+    , transform 1s ease-in-out;
+    opacity: 0;
+    font-size: 12px;
+    font-family: 'DrukWide Medium';
+  }
+  .trust-slide.active {
+    opacity: 1;
+  }
+  /* Slide Effect */
+  .trust-carousel[data-animation="slide"] .trust-slide {
+    transform: translateX(100%);
+  }
+  .trust-carousel[data-animation="slide"] .trust-slide.active {
+    transform: translateX(0);
+  }
+  /* Zoom Effect */
+  .trust-carousel[data-animation="zoom"] .trust-slide {
+    transform: scale(0.8);
+  }
+  .trust-carousel[data-animation="zoom"] .trust-slide.active {
+    transform: scale(1);
+  }
+</style>
+
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let slides = document.querySelectorAll(".trust-slide");
+        let duration = {{ section.settings.animation_duration }} * 1000; 
+        let index = 0;
+    
+        function showNextSlide() {
+          slides.forEach(slide => slide.classList.remove("active"));
+          index = (index + 1) % slides.length;
+          slides[index].classList.add("active");
+        }
+    
+        setInterval(showNextSlide, duration); 
+      });
+</script>
