@@ -40,7 +40,7 @@
     "currency_code_enabled": false,
     "stagger_products_apparition": true,
     "round_color_swatches": true,
-    "color_swatch_config": "green camo:green_camo.jpg\nmulti:multi.jpg\npink:#EC89CA\ngreen:#28D186\norange:#FC8236\nblue:#1056A9\nsnake:Snake.png\nblack monogram:#000000\nBLACK/WHITE:B_W.png\nblack/white/grey:#b7b7b7\nPink Monogram:Pink_Monogram.png\nBlack Washed:#000000\nCamo Pink:#EC89CA\nCamo:#CBBF9F\nLEOPARD:LEOPARD.png",
+    "color_swatch_config": "green camo:green_camo.jpg\nmulti:multi.jpg\npink:#EC89CA\ngreen:#28D186\norange:#FC8236\nblue:#1056A9\nsnake:Snake.png\nblack monogram:#000000\nBLACK/WHITE:B_W.png\nblack/white/grey:#b7b7b7\nPink Monogram:Pink_Monogram.png\nBlack Washed:WASHEDBLACK.png\nCamo Pink:#EC89CA\nCamo:#CBBF9F\nLEOPARD:LEOPARD.png",
     "show_vendor": false,
     "show_secondary_image": true,
     "product_add_to_cart": false,
@@ -68,12 +68,15 @@
         "custom_css": [],
         "settings": {
           "show_announcement": true,
+          "scroll_mode": "horizontal",
           "hyper_link": "shopify://collections/daytona",
           "background": "#000000",
           "text_color": "#ffffff",
           "text_1": "DAYTONA drop out now",
           "text_2": "FREE shipping from 250$",
-          "scroll_speed": 60
+          "font_weight": 500,
+          "scroll_speed": 60,
+          "animation_time": 4
         }
       },
       "header": {
