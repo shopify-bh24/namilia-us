@@ -81,6 +81,25 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "d7c8bb28-66de-4c77-93a0-a1d8bd77965e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sample_sale_header_Kopie.jpg",
+            "mobile_image": "shopify://shop_images/sample_sale_hochformat_mobile_Kopie.jpg",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "SAMPLE SALE",
+            "button_1_text": "SIGN UP FOR EARLY ACCESS!",
+            "button_1_link": "https://samplesale.namilia.com/",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 19
+          }
+        },
         "3073d305-a98e-465a-a8ab-0086c3bc58d3": {
           "type": "image",
           "settings": {
@@ -156,33 +175,14 @@
             "overlay_color": "#000000",
             "overlay_opacity": 20
           }
-        },
-        "d7c8bb28-66de-4c77-93a0-a1d8bd77965e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/HEADER_ETERNITY_Kopie.jpg",
-            "mobile_image": "shopify://shop_images/HEADER_ETERNITY_mobile_Kopie_2.jpg",
-            "text_position": "bottom_center",
-            "subheading": "",
-            "title": "ETERNITY",
-            "button_1_text": "EXPLORE",
-            "button_1_link": "shopify://collections/eternity",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 19
-          }
         }
       },
       "block_order": [
+        "d7c8bb28-66de-4c77-93a0-a1d8bd77965e",
         "3073d305-a98e-465a-a8ab-0086c3bc58d3",
         "ea49ef82-538f-462e-bc11-65c7754c3937",
         "424ac43c-fd10-43c8-bc75-60a7c3e653d4",
-        "fcd3c1c0-eb54-4197-9696-a2f399405477",
-        "d7c8bb28-66de-4c77-93a0-a1d8bd77965e"
+        "fcd3c1c0-eb54-4197-9696-a2f399405477"
       ],
       "settings": {
         "section_height": "large",
@@ -273,7 +273,14 @@
           "settings": {
             "title": "",
             "title_color": "",
+            "title_size_v2": 0,
             "alignment": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
             "background_color": "",
             "feed_id": "",
             "html_area": ""
