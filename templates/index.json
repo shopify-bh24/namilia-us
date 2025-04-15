@@ -83,6 +83,7 @@
       "blocks": {
         "d7c8bb28-66de-4c77-93a0-a1d8bd77965e": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/sample_sale_header_Kopie.jpg",
             "mobile_image": "shopify://shop_images/sample_sale_hochformat_mobile_Kopie.jpg",
