@@ -449,12 +449,12 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "products-all",
+            "collection": "most-wanted",
             "image": "shopify://shop_images/namilia_transformer_coat_front3_06fc20f9-7c92-4aac-8579-997d0e4cd2ce.jpg",
             "subheading": "",
-            "title": "VEGAN LEATHER FOREVER",
+            "title": "MOST WANTED",
             "link_text": "SHOP NOW",
-            "link_url": "shopify://collections/products-all",
+            "link_url": "shopify://collections/most-wanted",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 33
