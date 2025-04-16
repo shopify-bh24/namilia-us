@@ -266,6 +266,28 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "2b067fce-1bbc-4b50-ab15-c84a5245de67": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify://shop_images/header_celebs_Kopie.jpg",
+        "subheading": "NAMILIA",
+        "title": "CELEBRITIES",
+        "content": "<p>GLOBAL ICONS WEAR NAMILIA</p>",
+        "button_text": "EXPLORE",
+        "button_link": "shopify://pages/celebrities",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "1661027521c2483549": {
       "type": "apps",
       "blocks": {
@@ -535,28 +557,6 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "2b067fce-1bbc-4b50-ab15-c84a5245de67": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "reveal_on_scroll": true,
-        "section_height": "auto",
-        "image": "shopify://shop_images/header_celebs_Kopie.jpg",
-        "subheading": "NAMILIA",
-        "title": "CELEBRITIES",
-        "content": "<p>GLOBAL ICONS WEAR NAMILIA</p>",
-        "button_text": "EXPLORE",
-        "button_link": "shopify://pages/celebrities",
-        "link_style": "link",
-        "background_type": "full_width",
-        "text_width": "medium",
-        "text_position": "middle_center",
-        "text_color": "#ffffff",
-        "button_background": "#ffffff",
-        "button_text_color": "#000000",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "1661431149da32b729": {
       "type": "collection-list",
       "blocks": {
@@ -640,18 +640,18 @@
     "image_with_text_overlay_fM3bKk",
     "newsletter_rQpaiV",
     "slideshow",
+    "text-with-icons",
     "featured-collections",
     "5d23d63a-c34c-4129-b928-ae986757e4fa",
-    "1661027521c2483549",
     "fc19d7de-68f4-4083-9128-61e5ff08c724",
-    "text-with-icons",
+    "2b067fce-1bbc-4b50-ab15-c84a5245de67",
+    "1661027521c2483549",
     "newsletter",
     "image-with-text-block",
     "abba35ce-3105-4eb6-b501-8c6b674a35cb",
     "collection-list",
     "shop-the-look",
     "a16f045e-9d4a-40ee-806c-112e53de21f9",
-    "2b067fce-1bbc-4b50-ab15-c84a5245de67",
     "1661431149da32b729"
   ]
 }
