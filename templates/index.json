@@ -355,36 +355,6 @@
         "overlay_opacity": 30
       }
     },
-    "1661027521c2483549": {
-      "type": "apps",
-      "blocks": {
-        "eaf4cb1f-7343-40a2-aa9d-20deac5ea902": {
-          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "title_size_v2": 0,
-            "alignment": "center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_sides": 0,
-            "show_instagram_link": false,
-            "link_alignment": "left",
-            "link_color": "#000000",
-            "background_color": "",
-            "feed_id": "",
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "eaf4cb1f-7343-40a2-aa9d-20deac5ea902"
-      ],
-      "settings": {
-        "include_horizontal_margins": false,
-        "include_vertical_margins": false
-      }
-    },
     "newsletter": {
       "type": "newsletter",
       "settings": {
@@ -501,6 +471,36 @@
         "title": "Collection list",
         "background": "#000000",
         "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1661027521c2483549": {
+      "type": "apps",
+      "blocks": {
+        "eaf4cb1f-7343-40a2-aa9d-20deac5ea902": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "eaf4cb1f-7343-40a2-aa9d-20deac5ea902"
+      ],
+      "settings": {
+        "include_horizontal_margins": false,
+        "include_vertical_margins": false
       }
     },
     "shop-the-look": {
@@ -628,11 +628,11 @@
     "5d23d63a-c34c-4129-b928-ae986757e4fa",
     "fc19d7de-68f4-4083-9128-61e5ff08c724",
     "2b067fce-1bbc-4b50-ab15-c84a5245de67",
-    "1661027521c2483549",
     "newsletter",
     "image-with-text-block",
     "abba35ce-3105-4eb6-b501-8c6b674a35cb",
     "collection-list",
+    "1661027521c2483549",
     "shop-the-look",
     "a16f045e-9d4a-40ee-806c-112e53de21f9",
     "1661431149da32b729"
