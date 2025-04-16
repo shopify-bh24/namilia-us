@@ -193,6 +193,50 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify://shop_images/lieferung_256x256_crop_center_cad7dc0f-8af1-4086-9553-93d6b4e77024.webp",
+            "custom_icon_width": 50,
+            "title": "Free shipping over $250",
+            "content": "<p>Free standard shipping for orders over $250. <a href=\"/pages/shipping\" title=\"Shipping\">Check our shipping rates for details</a></p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify://shop_images/delivery-status_256x256_crop_center_ea0f9850-6514-453b-8370-5a56d890718a.webp",
+            "custom_icon_width": 50,
+            "title": "30 day returns",
+            "content": "<p>You can easily return your items within 30 days of arrival.</p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify://shop_images/express-delivery_256x256_crop_center_0571d66c-08df-40fc-90cb-bc033972c705.webp",
+            "custom_icon_width": 50,
+            "title": "Worldwide express Shipping",
+            "content": "<p>you can optionally select express shipping at our checkout</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3"
+      ],
+      "settings": {
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
+    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -266,6 +310,29 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "fc19d7de-68f4-4083-9128-61e5ff08c724": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify://shop_images/6F955ACC-21A6-4911-AC7B-7CC874C05382-min.gif",
+        "subheading": "",
+        "title": "party looks for all summer",
+        "content": "",
+        "button_text": "Shop now",
+        "button_link": "shopify://collections/coachella",
+        "link_style": "button",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "2b067fce-1bbc-4b50-ab15-c84a5245de67": {
       "type": "image-with-text-overlay",
       "settings": {
@@ -316,73 +383,6 @@
       "settings": {
         "include_horizontal_margins": false,
         "include_vertical_margins": false
-      }
-    },
-    "fc19d7de-68f4-4083-9128-61e5ff08c724": {
-      "type": "image-with-text-overlay",
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": true,
-        "section_height": "auto",
-        "image": "shopify://shop_images/6F955ACC-21A6-4911-AC7B-7CC874C05382-min.gif",
-        "subheading": "",
-        "title": "party looks for all summer",
-        "content": "",
-        "button_text": "Shop now",
-        "button_link": "shopify://collections/coachella",
-        "link_style": "button",
-        "background_type": "full_width",
-        "text_width": "medium",
-        "text_position": "middle_center",
-        "text_color": "#ffffff",
-        "button_background": "#ffffff",
-        "button_text_color": "#000000",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
-    "text-with-icons": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-box",
-            "custom_icon": "shopify://shop_images/lieferung_256x256_crop_center_cad7dc0f-8af1-4086-9553-93d6b4e77024.webp",
-            "custom_icon_width": 50,
-            "title": "Free shipping over $250",
-            "content": "<p>Free standard shipping for orders over $250. <a href=\"/pages/shipping\" title=\"Shipping\">Check our shipping rates for details</a></p>"
-          }
-        },
-        "item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "custom_icon": "shopify://shop_images/delivery-status_256x256_crop_center_ea0f9850-6514-453b-8370-5a56d890718a.webp",
-            "custom_icon_width": 50,
-            "title": "30 day returns",
-            "content": "<p>You can easily return your items within 30 days of arrival.</p>"
-          }
-        },
-        "item-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-lock",
-            "custom_icon": "shopify://shop_images/express-delivery_256x256_crop_center_0571d66c-08df-40fc-90cb-bc033972c705.webp",
-            "custom_icon_width": 50,
-            "title": "Worldwide express Shipping",
-            "content": "<p>you can optionally select express shipping at our checkout</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "item-3"
-      ],
-      "settings": {
-        "background": "#000000",
-        "text_color": "#ffffff"
       }
     },
     "newsletter": {
@@ -460,27 +460,13 @@
             "overlay_opacity": 33
           }
         },
-        "ef6bc816-2b6f-4ef8-916b-0b88083f1721": {
-          "type": "collection",
-          "settings": {
-            "collection": "arctic",
-            "image": "shopify://shop_images/Screen_Shot_2023-10-24_at_11.56.37.png",
-            "subheading": "",
-            "title": "STAY BUNDLED",
-            "link_text": "SHOP 'ARCTIC' NOW",
-            "link_url": "shopify://collections/arctic",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "afe7b912-9d00-40d8-8698-de910d684674": {
           "type": "collection",
           "settings": {
             "collection": "jackets",
             "image": "shopify://shop_images/IMG_6765.jpg",
             "subheading": "",
-            "title": "explore spike shoulders",
+            "title": "STATEMENT JACKETS",
             "link_text": "Shop coats & jackets",
             "link_url": "shopify://collections/jackets",
             "text_color": "rgba(0,0,0,0)",
@@ -490,7 +476,6 @@
         },
         "collection-3": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "get-ready",
             "image": "shopify://shop_images/333672040_591513275887957_8850411264170508442_n.jpg",
@@ -506,11 +491,9 @@
       },
       "block_order": [
         "collection-1",
-        "ef6bc816-2b6f-4ef8-916b-0b88083f1721",
         "afe7b912-9d00-40d8-8698-de910d684674",
         "collection-3"
       ],
-      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "layout": "collage",
