@@ -212,7 +212,7 @@
             "icon": "picto-phone",
             "custom_icon": "shopify://shop_images/delivery-status_256x256_crop_center_ea0f9850-6514-453b-8370-5a56d890718a.webp",
             "custom_icon_width": 50,
-            "title": "30 day returns",
+            "title": "30 day returnS",
             "content": "<p>You can easily return your items within 30 days of arrival.</p>"
           }
         },
@@ -483,9 +483,9 @@
             "title_color": "",
             "title_size_v2": 0,
             "alignment": "center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_sides": 0,
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
             "show_instagram_link": false,
             "link_alignment": "left",
             "link_color": "#000000",
