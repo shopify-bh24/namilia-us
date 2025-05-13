@@ -81,24 +81,23 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "d7c8bb28-66de-4c77-93a0-a1d8bd77965e": {
+        "image_AFKWLe": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/sample_sale_header_Kopie.jpg",
-            "mobile_image": "shopify://shop_images/sample_sale_hochformat_mobile_Kopie.jpg",
+            "image": "shopify://shop_images/stripclub_header_Kopie.jpg",
+            "mobile_image": "shopify://shop_images/HEADER_stripclub_mobile_Kopie.jpg",
             "text_position": "bottom_center",
             "subheading": "",
-            "title": "SAMPLE SALE",
+            "title": "STRIPCLUB",
             "button_1_text": "SHOP NOW!",
-            "button_1_link": "https://samplesale.namilia.com/",
+            "button_1_link": "shopify://collections/stripclub",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 19
+            "overlay_opacity": 10
           }
         },
         "3073d305-a98e-465a-a8ab-0086c3bc58d3": {
@@ -179,7 +178,7 @@
         }
       },
       "block_order": [
-        "d7c8bb28-66de-4c77-93a0-a1d8bd77965e",
+        "image_AFKWLe",
         "3073d305-a98e-465a-a8ab-0086c3bc58d3",
         "ea49ef82-538f-462e-bc11-65c7754c3937",
         "424ac43c-fd10-43c8-bc75-60a7c3e653d4",
